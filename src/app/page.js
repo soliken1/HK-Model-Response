@@ -12,9 +12,10 @@ export default function Home() {
     e.preventDefault();
     setLoading(true);
     const response = await fetch(
-      "https://cors-anywhere.herokuapp.com/https://hk-recommender.vercel.app/recommend",
+      "https://hk-recommender.vercel.app/recommend",
       {
         method: "POST",
+        mode: "no-cors",
         headers: {
           "Content-Type": "application/json",
         },
