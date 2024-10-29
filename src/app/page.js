@@ -15,7 +15,6 @@ export default function Home() {
       "https://hk-recommender.vercel.app/recommend",
       {
         method: "POST",
-        mode: "no-cors",
         headers: {
           "Content-Type": "application/json",
         },
